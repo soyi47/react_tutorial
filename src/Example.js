@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 /*
-  Custom Class Component Example
+  Class Component Example
 */
 class ClassExample extends React.Component {
   constructor(props) {
