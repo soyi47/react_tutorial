@@ -23,34 +23,17 @@ function tryConvert(temperature, convert) {
 function Calculator(props) {
     const [temperature, setTemperature] = useState('');
     const [scale, setScale] = useState('c');
-    const [celsius, setCelsius] = useState(temperature);
-    const [fahrenheit, setfahrenheit] = useState(tryConvert(temperature, toFahrenheit));
+    const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
+    const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
 
-    /*
     function handleCelsiusChange(temperature) {
         setScale('c');
         setTemperature(temperature);
-        setCelsius(temperature);
-        setfahrenheit(tryConvert(temperature, toFahrenheit));
     }
 
     function handleFahrenheitChange(temperature) {
         setScale('f');
         setTemperature(temperature);
-        setCelsius(tryConvert(temperature, toCelsius));
-        setfahrenheit(temperature);
-    }
-    */
-
-    function handleChange(scale, temperature) {
-        setScale(scale);
-        setTemperature(temperature);
-        setCelsius(scale === 'f' ? 
-            tryConvert(temperature, toCelsius) : 
-            temperature);
-        setfahrenheit(scale === 'c' ? 
-            tryConvert(temperature, toFahrenheit) : 
-            temperature);
     }
 
     return (
@@ -58,11 +41,11 @@ function Calculator(props) {
             <TemperatureInput
                 scale="c"
                 temperature={celsius}
-                onTemperatureChange={handleChange} />
+                onTemperatureChange={handleCelsiusChange} />
             <TemperatureInput
                 scale="f"
                 temperature={fahrenheit}
-                onTemperatureChange={handleChange} />
+                onTemperatureChange={handleFahrenheitChange} />
             <BoilingVerdict
                 celsius={parseFloat(celsius)} />
         </div>

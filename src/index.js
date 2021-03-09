@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import Game from './Game/Game';
+import Calculator from './Calculator/Calculator';
 import FilterableProductTable from './ThinkingInReact/FilterableProductTable';
 
 const PRODUCTS = [
@@ -15,7 +16,9 @@ const PRODUCTS = [
 ];
 
 ReactDOM.render(
-  <FilterableProductTable products={PRODUCTS} />,
+  // <Game />,
+  <Calculator />,
+  // <FilterableProductTable products={PRODUCTS} />,
   document.getElementById('root')
 );
 

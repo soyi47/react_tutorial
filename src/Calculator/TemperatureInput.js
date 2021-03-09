@@ -10,7 +10,7 @@ function TemperatureInput(props) {
     const scale = props.scale;
 
     function handleChange(e) {
-        props.onTemperatureChange(scale, e.target.value);
+        props.onTemperatureChange(e.target.value);
     }
 
     return (
