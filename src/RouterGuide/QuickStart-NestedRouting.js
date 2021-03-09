@@ -55,7 +55,7 @@ function About() {
 function Topics() {
     let match = useRouteMatch();
     console.log(match);    
-    /* What is 'useRouteMatch'...? 
+        /* What is 'useRouteMatch'...? 
         - takes no argument and returns the match object of the current <Route>
             => 현재 <Route>의 정보를 가져온다고 생각할 수 있음.
         - takes a single argument, which is identical to props arguments of matchPath.
@@ -90,6 +90,8 @@ function Topics() {
                 <Route path={`${match.path}/:topicId`}>
                     <Topic />
                 </Route>
+                {/* '{match.path}/something' 패턴이 모두 매칭되어
+                    ':id'에 해당되는 parameter는 모두 match.params에서 읽어올 수 있음.*/}
                 <Route path={match.path}>
                     <h4>Please select a topic.</h4>
                 </Route>
@@ -101,7 +103,10 @@ function Topics() {
 
 function Topic() {
     console.log(useParams());  
-    let { topicId } = useParams();  // What is this...?
+    let { topicId } = useParams(); 
+        /* What is useParams()...? 
+        - 현재 <Route>의 match.params에 접근하기 위해 사용함.
+        - URL 파라미터의 key-value 쌍으로 이루어진 객체를 반환함. */
     
     return <h4>Requested topic ID: {topicId}</h4>
 }
