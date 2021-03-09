@@ -1,10 +1,10 @@
 
-import Example1 from './RouteGuide/QuickStart-BasicRouting';
-import Example2 from './RouteGuide/QuickStart-NestedRouting';
+import Example1 from './RouterGuide/QuickStart-BasicRouting';
+import Example2 from './RouterGuide/QuickStart-NestedRouting';
 
-export default function RoutesExamples() {
+export default function RouterExamples() {
   return (
-    <div className="RouteExamples">
+    <div className="RouterExamples">
       <h1>React Router Guides</h1>
       <h2>Example 1</h2>
       <Example1 />
