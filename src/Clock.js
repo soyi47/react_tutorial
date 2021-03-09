@@ -14,16 +14,16 @@ class Clock extends React.Component {
         () => this.tick(),
         1000
       );
-      // console.log("componentDidMount()");
+      console.log("componentDidMount()");
     }
   
     componentDidUpdate() {
-      // console.log("componentDidUpdate");
+      console.log("componentDidUpdate");
     }
   
     componentWillUnmount() {
       clearInterval(this.timerID);
-      // console.log(this.timerID);
+      console.log(this.timerID);
     }
     
     tick() {
@@ -33,7 +33,7 @@ class Clock extends React.Component {
     }
   
     render() {
-      // console.log("render()");
+      console.log("render()");
       return (
         <div>
           <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
