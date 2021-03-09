@@ -5,6 +5,7 @@ import './index.css';
 import Game from './Game/GameFunc';
 import Calculator from './Calculator/Calculator';
 import FilterableProductTable from './ThinkingInReact/FilterableProductTable';
+import RouteExamples from './RouteExamples';
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -16,9 +17,10 @@ const PRODUCTS = [
 ];
 
 ReactDOM.render(
-  <Game />,
+  // <Game />,
   // <Calculator />,
   // <FilterableProductTable products={PRODUCTS} />,
+  <RouteExamples />,
   document.getElementById('root')
 );
 
