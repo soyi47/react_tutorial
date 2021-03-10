@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Game from './Game/GameFunc';
-import Calculator from './Calculator/Calculator';
-import FilterableProductTable from './ThinkingInReact/FilterableProductTable';
+import Game from './ReactDocs/Game/GameFunc';
+import Calculator from './ReactDocs/Calculator/Calculator';
+import FilterableProductTable from './ReactDocs/ThinkingInReact/FilterableProductTable';
 import RouterExamples from './RouterExamples';
-import EventPractice from './SkillsForReact/EventPractice_function';
+import ScrollBoxApp from './SkillsForReact/ScrollBoxApp';
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -17,12 +17,9 @@ const PRODUCTS = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
+
 ReactDOM.render(
-  // <Game />,
-  // <Calculator />,
-  // <FilterableProductTable products={PRODUCTS} />,
-  // <RouterExamples />,
-  <EventPractice />,
+  <ScrollBoxApp />,
   document.getElementById('root')
 );
 
