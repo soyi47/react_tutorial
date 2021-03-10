@@ -6,6 +6,7 @@ import Game from './Game/GameFunc';
 import Calculator from './Calculator/Calculator';
 import FilterableProductTable from './ThinkingInReact/FilterableProductTable';
 import RouterExamples from './RouterExamples';
+import EventPractice from './SkillsForReact/EventPractice_function';
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -20,7 +21,8 @@ ReactDOM.render(
   // <Game />,
   // <Calculator />,
   // <FilterableProductTable products={PRODUCTS} />,
-  <RouterExamples />,
+  // <RouterExamples />,
+  <EventPractice />,
   document.getElementById('root')
 );
 
