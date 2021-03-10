@@ -1,6 +1,6 @@
 
-import Example1 from './RouterGuide/QuickStart-BasicRouting';
-import Example2 from './RouterGuide/QuickStart-NestedRouting';
+import Example1 from './QuickStart-BasicRouting';
+import Example2 from './QuickStart-NestedRouting';
 
 export default function RouterExamples() {
   return (

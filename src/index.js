@@ -5,8 +5,8 @@ import './index.css';
 import Game from './ReactDocs/Game/GameFunc';
 import Calculator from './ReactDocs/Calculator/Calculator';
 import FilterableProductTable from './ReactDocs/ThinkingInReact/FilterableProductTable';
-import RouterExamples from './RouterExamples';
-import ScrollBoxApp from './SkillsForReact/ScrollBoxApp';
+import RouterExamples from './RouterGuide/RouterExamples';
+import IterationSample from './SkillsForReact/IterationSample';
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -19,7 +19,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <ScrollBoxApp />,
+  <IterationSample />,
   document.getElementById('root')
 );
 
