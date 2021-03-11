@@ -2,12 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Game from './ReactDocs/Game/GameFunc';
-import Calculator from './ReactDocs/Calculator/Calculator';
-import FilterableProductTable from './ReactDocs/ThinkingInReact/FilterableProductTable';
-import RouterExamples from './RouterGuide/RouterExamples';
-import IterationSample from './SkillsForReact/IterationSample';
-import SassComponent from './SkillsForReact/SassComponent';
+import CSSModule from './SkillsForReact/CSSModule';
 
 
 const PRODUCTS = [
@@ -21,7 +16,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <SassComponent />,
+  <CSSModule />,
   document.getElementById('root')
 );
 
