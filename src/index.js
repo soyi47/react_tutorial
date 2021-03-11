@@ -7,6 +7,8 @@ import Calculator from './ReactDocs/Calculator/Calculator';
 import FilterableProductTable from './ReactDocs/ThinkingInReact/FilterableProductTable';
 import RouterExamples from './RouterGuide/RouterExamples';
 import IterationSample from './SkillsForReact/IterationSample';
+import LifeCycleApp from './SkillsForReact/LifeCycleSample';
+
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -19,7 +21,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <IterationSample />,
+  <LifeCycleApp />,
   document.getElementById('root')
 );
 
