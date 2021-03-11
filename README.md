@@ -13,7 +13,7 @@
     - Refs.js : ['React.createRef()'](https://ko.reactjs.org/docs/refs-and-the-dom.html)를 통한 Ref 사용 학습.
 ***
 
-### Skills For React (책 '리액트를 다루는 기술'의 예시 코드)
+### Skills For React (책 '리액트를 다루는 기술')
 + 21.03.10
     - EventPractice.js : Event Handling과 ['Function Binding'](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) 추가 학습
     - ValidationSample.js , ScrollBox.js : Callback Ref 학습
