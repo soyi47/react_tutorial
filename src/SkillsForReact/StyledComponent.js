@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';    // styled 불러오기
 /*
     styled-components
+        - [npm(yarm) add styled-component]로 라이브러리 설치
         - 자바스크립트 파일 안에 스타일을 선언하는 방식인 CSS-in-JS. 이 CSS-in-JS 라이브러리 중 하나.
         - JS 파일 하나에 스타일까지 작성할 수 있어 스타일 파일을 따로 만들지 않아도 된다는 장점.
         - classNames를 사용하는 CSS/Sass와 비교했을 때, 전달받은 props 값을 쉽게 조회하고 스타일에 적용할 수 있다는 장점.
