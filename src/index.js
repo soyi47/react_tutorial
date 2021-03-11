@@ -7,7 +7,7 @@ import Calculator from './ReactDocs/Calculator/Calculator';
 import FilterableProductTable from './ReactDocs/ThinkingInReact/FilterableProductTable';
 import RouterExamples from './RouterGuide/RouterExamples';
 import IterationSample from './SkillsForReact/IterationSample';
-import Average from './SkillsForReact/Average';
+import SassComponent from './SkillsForReact/SassComponent';
 
 
 const PRODUCTS = [
@@ -21,7 +21,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <Average />,
+  <SassComponent />,
   document.getElementById('root')
 );
 
