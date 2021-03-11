@@ -44,6 +44,8 @@ const Average = () => {
 export default Average;
 
 /*
+    https://ko.reactjs.org/docs/hooks-reference.html
+    
     useMemo
         const memoizedValue = useMemo(() => comuterExpensiveValue(a, b), [a, b]);
         params : 1. 생성 함수 2. 그 의존성 값 배열.

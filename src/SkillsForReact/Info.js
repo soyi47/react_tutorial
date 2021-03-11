@@ -46,9 +46,11 @@ const App = () => {
     );
 }
 
-export default Info;
+export default App;
 
 /*
+    https://ko.reactjs.org/docs/hooks-reference.html
+    
     useState 
         const [state, setState] = useState(initialState);
         params : state의 기본값, 초기값.
