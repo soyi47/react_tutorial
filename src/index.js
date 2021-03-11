@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import CSSModule from './SkillsForReact/CSSModule';
+import StyledComponent from './SkillsForReact/StyledComponent';
 
 
 const PRODUCTS = [
@@ -16,7 +16,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <CSSModule />,
+  <StyledComponent />,
   document.getElementById('root')
 );
 
