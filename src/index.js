@@ -7,7 +7,7 @@ import Calculator from './ReactDocs/Calculator/Calculator';
 import FilterableProductTable from './ReactDocs/ThinkingInReact/FilterableProductTable';
 import RouterExamples from './RouterGuide/RouterExamples';
 import IterationSample from './SkillsForReact/IterationSample';
-import LifeCycleApp from './SkillsForReact/LifeCycleSample';
+import Average from './SkillsForReact/Average';
 
 
 const PRODUCTS = [
@@ -21,7 +21,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <LifeCycleApp />,
+  <Average />,
   document.getElementById('root')
 );
 
