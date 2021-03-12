@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import StyledComponent from './SkillsForReact/StyledComponent';
+import App from './SkillsForReact/todo-app/App';
 
 
 const PRODUCTS = [
@@ -16,7 +16,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <StyledComponent />,
+  <App />,
   document.getElementById('root')
 );
 

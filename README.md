@@ -22,7 +22,9 @@
     - LifeCycleSmaple.js : ['Component LifeCycle'](https://ko.reactjs.org/docs/react-component.html#the-component-lifecycle)과 관련 메서드 학습
     - ErrorBoundary.js : ['Error Boundary'](https://ko.reactjs.org/docs/react-component.html#error-boundaries)와 관련 메서드 학습
     - Counter.js Average.js Info.js useInputs.js : ['Hook'](https://ko.reactjs.org/docs/hooks-reference.html) 학습
-    - SassComponent CSSModule StyledComponent : Sass, Css Module, styled-component 예제 학습
+    - SassComponent CSSModule StyledComponent : Sass, Css Module, classnames,styled-component 예제 학습
++ 21.03.12
+    - todo-app : 배운 내용 복습하며 간단한 일정관리 웹 어플리케이션 예제 학습
 ***
 
 ### Router Guide from [React-Router](https://reactrouter.com/)
