@@ -16,7 +16,6 @@ import styled, { css } from 'styled-components';    // styled 불러오기
             2. 'styled.태그명'을 사용하여 구현 ( styled('태그명'), styled(컴포넌트 형식) 과 같은 형태로도 구현 가능. )
             3. Tagged Template Literal 문법을 적용해 스타일 작성
             -> 해당 스타일이 적용된 태그로 이루어진 React Component 생성.
-
 */
 
 const sizes = {
@@ -84,7 +83,6 @@ const Button = styled.button`
     & + button {
         margin-left: 1rem;
     }
-
 `;
 
 const StyledComponent = () => (
