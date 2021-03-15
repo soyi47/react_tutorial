@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 
-import App from './SkillsForReact/todo-app/App';
-
+import App from './ReactDocs/Context/multiple-contexts.js'
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -16,7 +16,7 @@ const PRODUCTS = [
 
 
 ReactDOM.render(
-  <App />,
+    <App />,
   document.getElementById('root')
 );
 
