@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 
-import App from './ReactDocs/Context/multiple-contexts.js'
+import App from './SkillsForReact/19_code-splitting/App-loadable'
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},

@@ -28,10 +28,12 @@
 + 21.03.11
     - LifeCycleSmaple.js : 7장. ['Component LifeCycle'](https://ko.reactjs.org/docs/react-component.html#the-component-lifecycle)과 관련 메서드 학습
     - ErrorBoundary.js : 7.3.3 ['Error Boundary'](https://ko.reactjs.org/docs/react-component.html#error-boundaries)와 관련 메서드 학습
-    - Counter.js Average.js Info.js useInputs.js : 8장. ['Hook'](https://ko.reactjs.org/docs/hooks-reference.html) 학습
+    - Counter.js Average.js Info.js useInputs.js : 8장. ['Hook'](https://ko.reactjs.org/docs/hooks-reference.html) 학습 - useState, useEffect, useReducer, useMemo, useCallback, useRef, coustom Hooks
     - SassComponent CSSModule StyledComponent : 9장. Sass, Css Module, classnames, styled-component 예제 학습
 + 21.03.12
     - todo-app : 10장. 배운 내용 복습하며 일정관리 웹 어플리케이션 예제 학습, 11장. Optimizing Performance - React.memo, react-virtualized
++ 21.03.18
+    - code-splitting : 19장. 코드 스플리팅. React.Lazy와 Suspense, Loadable Components
 ***
 
 ### Router Guide from [React-Router](https://reactrouter.com/)
