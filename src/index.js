@@ -2,9 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 
-import App from './SkillsForReact/code-splitting/App-loadable'
+import App from './MaterialUIpractice/App'
 
+const theme = createMuiTheme({
+})
+
+ReactDOM.render(
+  <MuiThemeProvider theme={theme}>
+    <App />
+  </MuiThemeProvider>,
+  document.getElementById('root')
+);
+
+
+/*
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
@@ -20,3 +33,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+*/

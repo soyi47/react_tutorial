@@ -35,6 +35,22 @@
 + 21.03.18
     - Callback.js, Promise.js, async-await : 비동기 작업
     - code-splitting : 19장. ['Code Splitting'](https://ko.reactjs.org/docs/code-splitting.html). ['React.Lazy와 Suspense'](https://ko.reactjs.org/docs/code-splitting.html#reactlazy), Loadable Components
+
 ***
 
 ### Router Guide from [React-Router](https://reactrouter.com/)
+
+***
+
+### Material UI
++ 21.03.26
+    - [Template](https://material-ui.com/getting-started/templates/) 'Sign In' 따라해보기
+
++ 21.03.29
+    - <Button> 태그 Icon 넣어서 만들어보기. 
+        - 'startIcon' props 사용. (아이콘 파일을 <span>으로 감싸고 margin을 넣어 버튼 이름과 같이 다시 <span>으로 감싸는 방식)
+        https://material-ui.com/api/button/
+        https://material-ui.com/components/buttons/#buttons-with-icons-and-label
+        - selector 사용해서 만들어보기
+        https://developer.mozilla.org/ko/docs/Web/CSS/background
+        
