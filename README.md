@@ -48,9 +48,8 @@
 
 + 21.03.29
     - <Button> 태그 Icon 넣어서 만들어보기. 
-        - 'startIcon' props 사용. (아이콘 파일을 <span>으로 감싸고 margin을 넣어 버튼 이름과 같이 다시 <span>으로 감싸는 방식)
+        - 'startIcon' props 사용. (아이콘 파일을 span으로 감싸고 margin을 넣어 버튼 이름과 같이 다시 span으로 감싸는 방식)
         https://material-ui.com/api/button/
         https://material-ui.com/components/buttons/#buttons-with-icons-and-label
-        - selector 사용해서 만들어보기
+        - pseudo selector 사용해서 만들어보기
         https://developer.mozilla.org/ko/docs/Web/CSS/background
-        
