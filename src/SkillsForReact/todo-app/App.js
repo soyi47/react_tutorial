@@ -33,6 +33,7 @@ function todoReducer(todos, action) {
 }
 
 const App = () => {
+    // const [todos, setTodos] = useState(createBulkTodos);
     const [todos, dispatch] = useReducer(todoReducer, undefined, createBulkTodos);
 
     // 고윳값으로 사용될 id
@@ -45,15 +46,24 @@ const App = () => {
             text,
             checked: false,
         };
+        // setTodos(todos => todos.concat(todo));
         dispatch({ type: 'INSERT', todo });
         nextId.current += 1; // nextId 1씩 더하기
     }, []);
 
     const onRemove = useCallback( id => {
+        // setTodos(todos => todos.filter(todo => todo.id !== id));
         dispatch({ type: 'REMOVE', id });
     }, []);
 
     const onToggle = useCallback( id => {
+        /*
+        setTodos(todos =>
+            todos.map(todo =>
+                todo.id === id ? {...todo, checked: !todo.checked } : todo, 
+            ),
+        );
+        */
         dispatch({ type: 'TOGGLE', id });
     }, []);
 
@@ -71,4 +81,12 @@ export default App;
     useState의 함수형 업데이트
     - setState() 메서드에 파라미터로 새로운 상태가 아닌,
         상태 업데이트 방식을 정의하는 업데이트 함수를 넣는 방법.
+
+    useCallback, useReducer 사용하여 리렌더링 성능 최적화(불필요한 리렌더링을 방지함)
+
+    컴포넌트는 아래의 네 가지 경우 리렌더링 된다
+    - props가 바뀔 때
+    - state가 바뀔 때
+    - 부모 컴포넌트가 리렌더링될 때
+    - this.forceUpdate로 강제로 렌더링을 트리거할 때
 */

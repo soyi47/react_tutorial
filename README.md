@@ -33,7 +33,7 @@
 + 21.03.12
     - todo-app : 10장. 배운 내용 복습하며 일정관리 웹 어플리케이션 예제 학습, 11장. Optimizing Performance - React.memo, react-virtualized
 + 21.03.18
-    - Callback.js, Promise.js, async-await : 비동기 작업
+    - Callback.js, Promise.js, async-await : 14-1장. 비동기 작업
     - code-splitting : 19장. ['Code Splitting'](https://ko.reactjs.org/docs/code-splitting.html). ['React.Lazy와 Suspense'](https://ko.reactjs.org/docs/code-splitting.html#reactlazy), Loadable Components
 
 ***
