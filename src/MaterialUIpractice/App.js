@@ -48,14 +48,21 @@ const useStyles = makeStyles((theme) => ({
       backgroundSize: '100% 100%'
     }
   },
-  test: {
-    '&:before': {
-      content: "' BEFORE '",
-      backgroundColor: "#fff",
+  root: {
+    width: '100%',
+    backgroundColor: 'red',
+    '&:hover': {
+      backgroundColor: 'blue',
     },
-    '&:after': {
-      content: "' AFTER '",
+    '&:focus': {
+      backgroundColor: 'green',
+    },
+    '&$disabledTest': {
+      backgroundColor: 'grey'
     }
+  },
+  disabledTest: {
+    backgroundColor: 'grey'
   }
 }));
 
@@ -124,7 +131,16 @@ function App() {
       <Box mt={8}>
         <Copyright />
       </Box>
-      <p className={classes.test}> 테스트 </p>
+      <Button
+        variant="contained"
+        classes={{
+          contained:classes.root,
+          disabled:classes.disabledTest,
+        }}
+        disabled={true}
+      >
+        버튼 테스트
+      </Button>
     </Container>
 
   )
