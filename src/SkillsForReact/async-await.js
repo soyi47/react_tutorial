@@ -33,4 +33,21 @@ async function runTasks() {
     }
 }
 
-runTasks();
+async function runTasks2() {
+    let result = await increase(0);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+}
+
+// runTasks();
+runTasks2()
+.catch(e => {console.log(e)});

@@ -11,7 +11,7 @@ class LifeCycleSample extends Component {
     /*  
         constructor 생성자
             컴포넌트를 만들 때 처음으로 실행되는 메서드.
-            초기 state를 정할 수 있음.
+            초기 state를 정할 수 있음. (setState 호출 없이 this.state로 초기 state 값 지정)
             메서드 바인딩이나 state 초기화 작업이 없다면 구현하지 않아도 되는 메서드.
     */
     constructor(props) {
@@ -162,7 +162,7 @@ export default LifeCycleApp;
     https://ko.reactjs.org/docs/react-component.html#the-component-lifecycle
     https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
-    "Rendering" is any time a function component gets called (or a class-based render method gets called) which returns a set of instructions for creating DOM.
+    "Rendering" is any time a function component gets called or a class-based render method gets called which returns a set of instructions for creating DOM.
     "Mounting" is when React "renders" the component for the first time and actually builds the initial DOM from those instructions.
 
     "mounting" (adding nodes to the DOM), "unmounting" (removing them from the DOM), and "updating" (making changes to nodes already in the DOM).
@@ -180,6 +180,7 @@ export default LifeCycleApp;
         4. componentDidMount()
 
     update 업데이트
+        A "re-render" is when React calls the function component again to get a new set of instructions on an already mounted component.
         컴포넌트는 아래의 네 가지 경우 업데이트
         - props가 바뀔 때
         - state가 바뀔 때

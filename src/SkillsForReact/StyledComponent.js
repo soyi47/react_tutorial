@@ -69,7 +69,7 @@ const Button = styled.button`
 
     /* 다음 코드는 inverted 값이 true일 때 특정 스타일을 부여함. */
     ${props =>
-    props.inverted &&   // props에 따른 조건무 스타일링
+    props.inverted &&   // props에 따른 조건부 스타일링
     css`
         background: none;
         border: 2px solid white;
