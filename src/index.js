@@ -5,14 +5,16 @@ import './index.css';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 
 import App from './MaterialUIpractice/App'
+import Clock from './Clock'
 
 const theme = createMuiTheme({
 })
 
 ReactDOM.render(
-  <MuiThemeProvider theme={theme}>
-    <App />
-  </MuiThemeProvider>,
+  // <MuiThemeProvider theme={theme}>
+  //   <App />
+  // </MuiThemeProvider>,
+  <Clock />,
   document.getElementById('root')
 );
 
